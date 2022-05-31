@@ -1,0 +1,238 @@
+select {
+  outline: none;
+}
+body{
+    overflow-x: hidden;
+}
+.btn {
+  padding: 0 20px;
+}
+.btn-option {
+  padding: 7.82px 9.8px 7.82px 15.5px;
+}
+.header {
+  padding: 16.8px 15px 13.3px 15px;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.banner {
+  height: calc(100vh - 133px);
+  min-height: 500px;
+  background-image: url("../img/pillar-structure-bg.webp");
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.banner-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.78);
+  z-index: -1;
+}
+.intendent-img:after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: transparent;
+  top: -55px;
+  box-sizing: content-box;
+  left: -55px;
+  border-radius: 100%;
+  border: 35px solid #841e25;
+}
+.mission {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+.mission:after {
+  content: "";
+  position: absolute;
+  top: -60px;
+  width: 100%;
+  height: 100px;
+  left: 50%;
+  transform: translateX(-50%) scale(1.2);
+  background-color: white;
+  border-radius: 0px 0px 100% 100%;
+  z-index: -1;
+}
+.mission:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(1.2);
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-radius: 100% 100% 0 0;
+
+  z-index: -1;
+}
+
+.mission-con {
+  position: relative;
+}
+.mission-con::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/dot-background.svg);
+  top: 250px;
+  left: 0px;
+  width: 126px;
+  height: 280px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.mission-con:nth-child(2)::before {
+  top: 40px;
+  left: 80%;
+  transform: rotate(90deg);
+}
+.mission-img{
+    position: relative;
+    -webkit-box-shadow: 0px 15px 20px -1px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 15px 20px -1px rgba(0,0,0,0.48);
+    box-shadow: 0px 15px 20px -1px rgba(0,0,0,0.48);
+  
+
+  }
+.mission-img::before {
+  content: "";
+  position: absolute;
+  width: 245px;
+  aspect-ratio: 1/1;
+  border: 3px solid #ffba49;
+  border-radius: 100%;
+  left: -60px;
+  bottom: -25px;
+  z-index: -1;
+}
+.mission-img::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  border: 3px solid #ffba49;
+  top: 100px;
+  left: -75px;
+  z-index: -1;
+}
+.mission-img:nth-child(2)::after{
+top: -43px;
+left: 55px;
+
+}
+.mission-img:nth-child(2)::before{
+    bottom: 50%;
+    left: 150px;
+}
+.service-card:hover .icon{
+    background: transparent;
+    border: 1px solid white;
+}
+.education{
+    height: 760px;
+}
+.education::before{
+    content: "";
+    position: absolute;
+    background: rgb(249,244,252);
+    background: linear-gradient(0deg, rgba(249,244,252,1) 0%, rgba(255,244,229,1) 100%);    height: 100%;
+    width: 120%;
+    top: 0;
+    border-radius: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.education .slick-arrow{
+    left: 100px;
+    z-index: 20;
+    top:unset;
+    bottom: -68px;
+    height: 16px;
+        width: 19px;
+        background-size: contain;
+    /* background-image: url(../icon/slider-left.svg); */
+}
+.education .slick-prev{
+    left: 80px;
+    /* bottom: -48px; */
+  
+    background-image: url(../icon/slider-left.svg);
+}
+.education .slick-next{
+    left: 120px;
+    /* bottom: -48px; */
+  
+    background-image: url(../icon/slider-right.svg);
+    color: rgba(55, 71, 79, 0.65);
+}
+.testimonal-card{
+    position: relative;
+}
+.testimonal{
+ padding-bottom:100px;
+}
+.testimonal-card{   
+margin:30px 20px ;
+}
+.testimonal-slider ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonal-slider .slick-dots li{
+background-color: #7C7C7C;
+width: 7px;
+height: 7px;
+border-radius: 50%;
+}
+.testimonal-slider .slick-dots li.slick-active{
+    background-color: #841E25;
+    width: 10px;
+    height: 10px;   
+}
+.content li{
+    list-style: disc;
+    
+}
+.content li a{
+text-decoration: underline;  
+}
+
+.information{
+    position: relative;
+    overflow: hidden;
+
+}
+.information::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    border-radius:0% 0 100% 100%;
+    top:0;
+    left:0;
+    background-color: white;
+}
+.information::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    border-radius:100% 100% 0 0;
+    bottom:0;
+    left:0;
+    background-color: white;
+}
