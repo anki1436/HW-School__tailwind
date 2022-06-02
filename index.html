@@ -1,504 +1,780 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW SCHOOL DISTRICT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HW SCHOOL DISTRICT</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link rel="stylesheet" href="./css/progress.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-  <script src="./js/tailwind.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/slick-theme.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-  <link rel="stylesheet" href="./css/progress.css">
-  <link rel="stylesheet" href="./css/style.css" />
-
-</head>
-
-<body class="bg-white">
-  <header class="sticky top-0 z-10">
-    <div class="bg-primary header">
-      <div class="container text-grey flex justify-center md:justify-between flex-wrap">
-        <div class="flex flex-row">
-          <div class="flex flex-row items-center justify-center mr-8">
-            <img src="./icon/call.svg" class="object-contain w-2.5 mr-1.5" alt="" />
-            <span class="text-xs">Support Hotline : 586-217-2163 </span>
+  <body class="bg-white">
+    <header class="sticky top-0 z-10">
+      <div class="bg-primary header">
+        <div
+          class="container text-grey flex justify-center md:justify-between flex-wrap"
+        >
+          <div class="flex flex-row">
+            <div class="flex flex-row items-center justify-center mr-8">
+              <img
+                src="./icon/call.svg"
+                class="object-contain w-2.5 mr-1.5"
+                alt=""
+              />
+              <span class="text-xs">Support Hotline : 586-217-2163 </span>
+            </div>
+            <div class="flex flex-row items-center justify-center mr-8">
+              <img
+                src="./icon/letter.svg"
+                class="object-contain w-2.5 mr-1.5"
+                alt=""
+              />
+              <span class="text-xs">vctung@outlook.com </span>
+            </div>
           </div>
-          <div class="flex flex-row items-center justify-center mr-8">
-            <img src="./icon/letter.svg" class="object-contain w-2.5 mr-1.5" alt="" />
-            <span class="text-xs">vctung@outlook.com </span>
-          </div>
-        </div>
-        <div class="flex flex-row">
-          <a class="btn rounded-full flex items-center bg-white text-xs text-dark mr-5 leading-none">
-            Sign up
-          </a>
-          <div class="btn-option rounded-full flex items-center bg-primary border border-white">
-            <select class="bg-primary text-xs leading-none">
-              <option value="none" selected disabled hidden>
-                Select Language
-              </option>
-              <option value="English">English</option>
-              <option value="Hindi">Hindi</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="bg-white">
-      <div class="container flex justify-between py-3">
-        <div class="logo flex items-center text-base">
-          <img src="./icon/hw-logo.svg" class="w-11 h-11 mr-1.5" alt="hw" />
-          HW SCHOOL DISTRICT
-        </div>
-        <ul class="flex items-center gap-x-4">
-          <li><a href="#">Home</a></li>
-          <li>
-            <select name="school" id="school">
-              <option value="school">School</option>
-              <option value="college">College</option>
-            </select>
-          </li>
-          <li>
-            <select name="district" id="district">
-              <option value="District">District Info</option>
-              <option value="State">State Info</option>
-            </select>
-          </li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Nutrition</a></li>
-          <li>
-            <select name="education" id="education">
-              <option value="District">District Info</option>
-              <option value="State">State Info</option>
-            </select>
-          </li>
-          <li>
-            <select name="sports" id="sports">
-              <option value="Athelete">Athletics</option>
-              <option value="wrestler">Wrestler</option>
-            </select>
-          </li>
-          <li>
-            <select name="more" id="more">
-              <option value="More">More</option>
-              <option value="Mores">Mores</option>
-            </select>
-          </li>
-          <li class="border rounded-full border-borderColor ml-4">
-            <a href="#" class="search-icon"><i class="fa fa-search py-1.5 px-3" aria-hidden="true"></i>
+          <div class="flex flex-row">
+            <a
+              class="btn rounded-full flex items-center bg-white text-xs text-dark mr-5 leading-none"
+            >
+              Sign up
             </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <section class="banner relative">
-    <div class="banner-bg"></div>
-    <img src="./img/group-of-student.png" class="absolute bottom-0 right-0 w-1/2" alt="" />
-    <div class="container flex items-center justify-start h-full">
-      <div class="banner-content text-white w-2/4 ml-20">
-        <h1 class="text-5xl mb-7">
-          We are determined to achieve the highest standards
-        </h1>
-        <p class="text-base w-3/4 mb-5">
-          We are always availed to consult on taking your higher education to
-          the next level so you can stay competitive in the global world.
-        </p>
-        <a class="inline-flex items-center rounded-full btn bg-primary py-4 px-8 leading-7">Enroll Now <img
-            src="./icon/forward.svg" class="ml-5 h-3" alt="" /></a>
-      </div>
-    </div>
-  </section>
-  <section class="intendent bg-white">
-    <div class="mx-auto w-fit flex py-28 px-10 justify-center flex-wrap">
-      <div class="intendent-img w-96 md:mr-10 pb-6 relative">
-        <img src="./img/portrait-confident-senior-businessman-office.png" class="w-full rounded-2xl"
-          alt="senior businessman wearing blue shirt " />
-        <span
-          class="w-max bg-secondary absolute z-2 px-24 py-4 rounded leading-4 bottom-1 left-1/2 transform -translate-x-1/2">Kimmie
-          Vo</span>
-      </div>
-      <div class="intendent-content w-96 flex flex-col justify-between">
-        <h2 class="text-3xl">Superintendent Image & Name</h2>
-        <p class="text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="mission bg-primary">
-    <div class="container pb-12">
-      <div class="flex px-20 items-center mission-con mb-16">
-        <div class="w-72 mission-img mr-10 rounded-2xl">
-          <img src="./img/mission.png" class="w-72 rounded-2xl" alt="" />
+            <div
+              class="btn-option rounded-full flex items-center bg-primary border border-white"
+            >
+              <select class="bg-primary text-xs leading-none">
+                <option value="none" selected disabled hidden>
+                  Select Language
+                </option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+              </select>
+            </div>
+          </div>
         </div>
+      </div>
+      <nav class="bg-white">
+        <div class="container flex justify-between py-3">
+          <div class="logo flex items-center text-base">
+            <img src="./icon/hw-logo.svg" class="w-11 h-11 mr-1.5" alt="hw" />
+            HW SCHOOL DISTRICT
+          </div>
+          <ul class="flex items-center gap-x-4">
+            <li><a href="#">Home</a></li>
+            <li>
+              <select name="school" id="school">
+                <option value="school">School</option>
+                <option value="college">College</option>
+              </select>
+            </li>
+            <li>
+              <select name="district" id="district">
+                <option value="District">District Info</option>
+                <option value="State">State Info</option>
+              </select>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Nutrition</a></li>
+            <li>
+              <select name="education" id="education">
+                <option value="District">District Info</option>
+                <option value="State">State Info</option>
+              </select>
+            </li>
+            <li>
+              <select name="sports" id="sports">
+                <option value="Athelete">Athletics</option>
+                <option value="wrestler">Wrestler</option>
+              </select>
+            </li>
+            <li>
+              <select name="more" id="more">
+                <option value="More">More</option>
+                <option value="Mores">Mores</option>
+              </select>
+            </li>
+            <li class="border rounded-full border-borderColor ml-4">
+              <a href="#" class="search-icon"
+                ><i class="fa fa-search py-1.5 px-3" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-        <div class="mission-content text-white w-2/5 pr-5">
-          <h3 class="text-3xl mb-3.5">Mission</h3>
-          <p class="text-base mb-4">
-            The Mission of Harper Woods School District is to provide a
-            nurturing educational experience with a challenging academic
-            curriculum aligned to every classroom that will challenge and
-            prepare students for career, college and entrepreneurship
-            readiness.
+    <section class="banner relative">
+      <div class="banner-bg"></div>
+      <img
+        src="./img/group-of-student.png"
+        class="absolute bottom-0 right-0 w-1/2"
+        alt=""
+      />
+      <div class="container flex items-center justify-start h-full">
+        <div class="banner-content text-white w-2/4 ml-20">
+          <h1 class="text-5xl mb-7">
+            We are determined to achieve the highest standards
+          </h1>
+          <p class="text-base w-3/4 mb-5">
+            We are always availed to consult on taking your higher education to
+            the next level so you can stay competitive in the global world.
           </p>
-          <a href="" class="bg-white rounded-full text-base text-dark py-2 px-11 inline-flex shadow-xl">Read more</a>
+          <a
+            class="inline-flex items-center rounded-full btn bg-primary py-4 px-8 leading-7"
+            >Enroll Now <img src="./icon/forward.svg" class="ml-5 h-3" alt=""
+          /></a>
         </div>
       </div>
-      <div class="flex px-20 items-center justify-end mission-con">
-        <div class="mission-content text-white w-2/5 pr-5 mb-10">
-          <h3 class="text-3xl mb-3.5">Vision</h3>
-          <p class="text-base mb-3">
-            Harper Woods School District is dedicated to providing a world
-            class education through a collaborative effort with the Board of
-            Education, School Staff, Students, Families and Community Members
-            to: <br />
-            1. Ignite the potential in every student <br />
-            2. Inspire a passion for life-long learning <br />
-            3. Prepare students to compete in a global society
+    </section>
+    <section class="intendent bg-white">
+      <div class="mx-auto w-fit flex py-28 px-10 justify-center flex-wrap">
+        <div class="intendent-img w-96 md:mr-10 pb-6 relative">
+          <img
+            src="./img/portrait-confident-senior-businessman-office.png"
+            class="w-full rounded-2xl"
+            alt="senior businessman wearing blue shirt "
+          />
+          <span
+            class="w-max bg-secondary absolute z-2 px-24 py-4 rounded leading-4 bottom-1 left-1/2 transform -translate-x-1/2"
+            >Kimmie Vo</span
+          >
+        </div>
+        <div class="intendent-content w-96 flex flex-col justify-between">
+          <h2 class="text-3xl">Superintendent Image & Name</h2>
+          <p class="text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <a href="" class="bg-white rounded-full text-base text-dark py-2 px-11 inline-flex">Read more</a>
-        </div>
-        <div class="w-72 mission-img mr-10 rounded-2xl">
-          <img src="./img/vision.png" class="w-72 rounded-2xl" alt="" />
         </div>
       </div>
-    </div>
-  </section>
-  <section class="services py-20 bg-white">
-    <h2 class="text-3xl text-center mb-5">Why HW School</h2>
-    <p class="text-center text-base w-1/2 mx-auto mb-20">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua!
-    </p>
-    <div class="flex gap-x-7 gap-y-10 max-w-4xl mx-auto justify-center flex-wrap">
-      <div
-        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out">
-        <div class="icon rounded-full bg-dark p-4 w-fit mb-5">
-          <img src="./icon/target.svg" alt="" class="h-6 aspect-square" />
-        </div>
-        <h4 class="text-lg mb-5">Lorem Ipsum Dolar</h4>
-        <p class="w-52 text-sm text-justify break-all">
-          Maiores voluptas laboriosam non dolorum perferendis fuga repellat
-          aut. Blanditiis quos in minus
-        </p>
-      </div>
-      <div
-        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out">
-        <div class="icon rounded-full bg-pink p-4 w-fit mb-5">
-          <img src="./icon/feather-book-open.svg" alt="" class="h-6 aspect-square" />
-        </div>
-        <h4 class="text-lg mb-5">Lorem Ipsum Dolar</h4>
-        <p class="w-52 text-sm text-justify break-all">
-          Maiores voluptas laboriosam non dolorum perferendis fuga repellat
-          aut. Blanditiis quos in minus
-        </p>
-      </div>
-      <div
-        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out">
-        <div class="icon rounded-full bg-green p-4 w-fit mb-5">
-          <img src="./icon/paper-tick.svg" alt="" class="h-6 aspect-square" />
-        </div>
-        <h4 class="text-lg mb-5">Lorem Ipsum Dolar</h4>
-        <p class="w-52 text-sm text-justify break-all">
-          Maiores voluptas laboriosam non dolorum perferendis fuga repellat
-          aut. Blanditiis quos in minus
-        </p>
-      </div>
-      <div
-        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out">
-        <div class="icon rounded-full aspect-square bg-blue p-4 w-fit mb-5">
-          <img src="./icon/home.svg" alt="" class="h-6 aspect-square" />
-        </div>
-        <h4 class="text-lg mb-5">Lorem Ipsum Dolar</h4>
-        <p class="w-52 text-sm text-justify break-all">
-          Maiores voluptas laboriosam non dolorum perferendis fuga repellat
-          aut. Blanditiis quos in minus
-        </p>
-      </div>
-      <div
-        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out">
-        <div class="icon rounded-full aspect-square bg-yellow p-4 w-fit mb-5">
-          <img src="./icon/medal.svg" alt="" class="h-6 aspect-square" />
-        </div>
-        <h4 class="text-lg mb-5">Lorem Ipsum Dolar</h4>
-        <p class="w-52 text-sm text-justify break-all">
-          Maiores voluptas laboriosam non dolorum perferendis fuga repellat
-          aut. Blanditiis quos in minus
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="education relative pt-20">
-    <h3 class="text-3xl text-center mb-5">Lorem Ipsum Dolar</h3>
-    <p class="text-base text-center w-1/2 mx-auto mb-24">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua!
-    </p>
-    <div class="student-slider   px-12 pb-2">
+    </section>
 
-      <div class="h-52 relative px-8  rounded-lg ">
-        <img src="./img/education/beacon-elementary-school.png" class=" object-cover rounded-lg h-full w-full" alt="">
-        <p
-          class="text-lg	py-3 text-center rounded-lg bg-white shadow-lg  hover:bg-primary text-black hover:text-white  absolute inset-x-8 	-bottom-2 transition-all duration-700 cursor-pointer ease-out">
-          Beacon Elementary</p>
-      </div>
-      <div class="h-52 relative px-8  rounded-md">
-        <img src="./img/education/tyrone-elementary.png" class=" object-cover rounded-md h-full w-full" alt="">
-        <p
-          class="text-lg	py-3 text-center rounded-md bg-white shadow-lg  hover:bg-primary text-black hover:text-white  absolute inset-x-8 	-bottom-2 transition-all duration-700 cursor-pointer ease-out">
-          Tyrone Elementary</p>
-      </div>
-      <div class="h-52 relative px-8  rounded-md">
-        <img src="./img/education/hw-middle-school.png" class=" object-cover rounded-md h-full w-full" alt="">
-        <p
-          class="text-lg	py-3 text-center rounded-md bg-white shadow-lg   hover:bg-primary text-black hover:text-white  absolute inset-x-8 	-bottom-2 transition-all duration-700 cursor-pointer ease-out">
-          HW Middle School</p>
-      </div>
-      <div class="h-52 relative px-8  rounded-md">
-        <img src="./img/education/hw-high-school.png" class=" object-cover rounded-md h-full w-full" alt="">
-        <p
-          class="text-lg	py-3 text-center rounded-md bg-white shadow-lg  hover:bg-primary text-black hover:text-white  absolute inset-x-8 	-bottom-2 transition-all duration-700 cursor-pointer ease-out">
-          HW High School</p>
-      </div>
+    <section class="mission bg-primary">
+      <div class="container pb-12">
+        <div class="flex px-20 items-center mission-con mb-16">
+          <div class="w-72 mission-img mr-10 rounded-2xl">
+            <img src="./img/mission.png" class="w-72 rounded-2xl" alt="" />
+          </div>
 
-      <div class="h-52 relative px-8  rounded-lg ">
-        <img src="./img/education/beacon-elementary-school.png" class=" object-cover rounded-lg h-full w-full" alt="">
-        <p
-          class="text-lg	py-3 text-center rounded-lg bg-white shadow-lg  hover:bg-primary text-black hover:text-white  absolute inset-x-8 	-bottom-2 transition-all duration-700 cursor-pointer ease-out">
-          Beacon Elementary</p>
-      </div>
-      <div class="h-52 relative px-8  rounded-md">
-        <img src="./img/education/tyrone-elementary.png" class=" object-cover rounded-md h-full w-full" alt="">
-        <p
-          class="text-lg	py-3 text-center rounded-md bg-white shadow-lg  hover:bg-primary text-black hover:text-white  absolute inset-x-8 	-bottom-2 transition-all duration-700 cursor-pointer ease-out">
-          Tyrone Elementary</p>
-      </div>
-      <div class="h-52 relative px-8  rounded-md">
-        <img src="./img/education/hw-middle-school.png" class=" object-cover rounded-md h-full w-full" alt="">
-        <p
-          class="text-lg	py-3 text-center rounded-md bg-white shadow-lg   hover:bg-primary text-black hover:text-white  absolute inset-x-8 	-bottom-2 transition-all duration-700 cursor-pointer ease-out">
-          HW Middle School</p>
-      </div>
-      <div class="h-52 relative px-8  rounded-md">
-        <img src="./img/education/hw-high-school.png" class=" object-cover rounded-md h-full w-full" alt="">
-        <p
-          class="text-lg	py-3 text-center rounded-md bg-white shadow-lg  hover:bg-primary text-black hover:text-white  absolute inset-x-8 	-bottom-2 transition-all duration-700 cursor-pointer ease-out">
-          HW High School</p>
-      </div>
-    </div>
-  </section>
-  <section class="testimonal container ">
-    <h3 class="text-center text-4xl	mb-5 mt-12">Testimonial</h3>
-    <p class="w-1/2 mx-auto text-center text-base	leading-7 mb-20">Torquem detraxit hosti et quidem faciunt, ut et negent
-      satis esse appetendum,
-      alterum. Si sine causa? quae fuerit causa, mox videro; interea hoc epicurus in liberos.</p>
-
-    <div class="testimonal-slider ">
-
-      <div class="testimonal-card shadow-xl rounded-2xl ">
-        <div class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5 ">
-          <img src="./img/testimonal/niek-bove.png" class="w-11 aspect-square rounded-lg" alt="">
-          <div class="card-title">
-            <h4 class="text-xl leading-tight		">Niek Bove</h4>
-            <p class="text-xs	text-lightGrey">Lorem ipsum</p>
+          <div class="mission-content text-white w-2/5 pr-5">
+            <h3 class="text-3xl mb-3.5">Mission</h3>
+            <p class="text-base mb-4">
+              The Mission of Harper Woods School District is to provide a
+              nurturing educational experience with a challenging academic
+              curriculum aligned to every classroom that will challenge and
+              prepare students for career, college and entrepreneurship
+              readiness.
+            </p>
+            <a
+              href=""
+              class="bg-white rounded-full text-base text-dark py-2 px-11 inline-flex shadow-xl"
+              >Read more</a
+            >
           </div>
         </div>
-
-        <p class="w-11/12	 mx-auto text-base text-left pb-9">
-          Nisi cumque in necessitatibus molestiae
-          eaque excepturi ab. Laboriosam ipsam
-          voluptatem voluptatibus labore quam nihil.
-          Quasi occaecati quos ratione quia aut
-          molestiae velit et. Voluptatem id ea dicta
-        </p>
-      </div>
-
-      <div class="testimonal-card shadow-xl rounded-2xl ">
-        <div class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5 ">
-          <img src="./img/testimonal/harrison-phillips.png" class="w-11 aspect-square rounded-lg" alt="">
-          <div class="card-title">
-            <h4 class="text-xl leading-tight		">Harrison Phillips</h4>
-            <p class="text-xs	text-lightGrey">Lorem ipsum</p>
+        <div class="flex px-20 items-center justify-end mission-con">
+          <div class="mission-content text-white w-2/5 pr-5 mb-10">
+            <h3 class="text-3xl mb-3.5">Vision</h3>
+            <p class="text-base mb-3">
+              Harper Woods School District is dedicated to providing a world
+              class education through a collaborative effort with the Board of
+              Education, School Staff, Students, Families and Community Members
+              to: <br />
+              1. Ignite the potential in every student <br />
+              2. Inspire a passion for life-long learning <br />
+              3. Prepare students to compete in a global society
+            </p>
+            <a
+              href=""
+              class="bg-white rounded-full text-base text-dark py-2 px-11 inline-flex"
+              >Read more</a
+            >
+          </div>
+          <div class="w-72 mission-img mr-10 rounded-2xl">
+            <img src="./img/vision.png" class="w-72 rounded-2xl" alt="" />
           </div>
         </div>
-
-        <p class="w-11/12	 mx-auto text-base text-left pb-9">
-          Nisi cumque in necessitatibus molestiae
-          eaque excepturi ab. Laboriosam ipsam
-          voluptatem voluptatibus labore quam nihil.
-          Quasi occaecati quos ratione quia aut
-          molestiae velit et. Voluptatem id ea dicta
-        </p>
       </div>
-      <div class="testimonal-card shadow-xl rounded-2xl ">
-        <div class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5 ">
-          <img src="./img/testimonal/ainara-vergara.png" class="w-11 aspect-square rounded-lg" alt="">
-          <div class="card-title">
-            <h4 class="text-xl leading-tight		">Ainara Vergara</h4>
-            <p class="text-xs	text-lightGrey">Lorem ipsum</p>
+    </section>
+    <section class="services py-20 bg-white">
+      <h2 class="text-3xl text-center mb-5">Why HW School</h2>
+      <p class="text-center text-base w-1/2 mx-auto mb-20">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua!
+      </p>
+      <div
+        class="flex gap-x-7 gap-y-10 max-w-4xl mx-auto justify-center flex-wrap"
+      >
+        <div
+          class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out"
+        >
+          <div class="icon rounded-full bg-dark p-4 w-fit mb-5">
+            <img src="./icon/target.svg" alt="" class="h-6 aspect-square" />
           </div>
+          <h4 class="text-lg mb-5">Lorem Ipsum Dolar</h4>
+          <p class="w-52 text-sm text-justify break-all">
+            Maiores voluptas laboriosam non dolorum perferendis fuga repellat
+            aut. Blanditiis quos in minus
+          </p>
+        </div>
+        <div
+          class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out"
+        >
+          <div class="icon rounded-full bg-pink p-4 w-fit mb-5">
+            <img
+              src="./icon/feather-book-open.svg"
+              alt=""
+              class="h-6 aspect-square"
+            />
+          </div>
+          <h4 class="text-lg mb-5">Lorem Ipsum Dolar</h4>
+          <p class="w-52 text-sm text-justify break-all">
+            Maiores voluptas laboriosam non dolorum perferendis fuga repellat
+            aut. Blanditiis quos in minus
+          </p>
+        </div>
+        <div
+          class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out"
+        >
+          <div class="icon rounded-full bg-green p-4 w-fit mb-5">
+            <img src="./icon/paper-tick.svg" alt="" class="h-6 aspect-square" />
+          </div>
+          <h4 class="text-lg mb-5">Lorem Ipsum Dolar</h4>
+          <p class="w-52 text-sm text-justify break-all">
+            Maiores voluptas laboriosam non dolorum perferendis fuga repellat
+            aut. Blanditiis quos in minus
+          </p>
+        </div>
+        <div
+          class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out"
+        >
+          <div class="icon rounded-full aspect-square bg-blue p-4 w-fit mb-5">
+            <img src="./icon/home.svg" alt="" class="h-6 aspect-square" />
+          </div>
+          <h4 class="text-lg mb-5">Lorem Ipsum Dolar</h4>
+          <p class="w-52 text-sm text-justify break-all">
+            Maiores voluptas laboriosam non dolorum perferendis fuga repellat
+            aut. Blanditiis quos in minus
+          </p>
+        </div>
+        <div
+          class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out"
+        >
+          <div class="icon rounded-full aspect-square bg-yellow p-4 w-fit mb-5">
+            <img src="./icon/medal.svg" alt="" class="h-6 aspect-square" />
+          </div>
+          <h4 class="text-lg mb-5">Lorem Ipsum Dolar</h4>
+          <p class="w-52 text-sm text-justify break-all">
+            Maiores voluptas laboriosam non dolorum perferendis fuga repellat
+            aut. Blanditiis quos in minus
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="education relative pt-20">
+      <h3 class="text-3xl text-center mb-5">Lorem Ipsum Dolar</h3>
+      <p class="text-base text-center w-1/2 mx-auto mb-24">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua!
+      </p>
+      <div class="student-slider px-12 pb-2">
+        <div class="h-52 relative px-8 rounded-lg">
+          <img
+            src="./img/education/beacon-elementary-school.png"
+            class="object-cover rounded-lg h-full w-full"
+            alt=""
+          />
+          <p
+            class="text-lg py-3 text-center rounded-lg bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-2 transition-all duration-700 cursor-pointer ease-out"
+          >
+            Beacon Elementary
+          </p>
+        </div>
+        <div class="h-52 relative px-8 rounded-md">
+          <img
+            src="./img/education/tyrone-elementary.png"
+            class="object-cover rounded-md h-full w-full"
+            alt=""
+          />
+          <p
+            class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-2 transition-all duration-700 cursor-pointer ease-out"
+          >
+            Tyrone Elementary
+          </p>
+        </div>
+        <div class="h-52 relative px-8 rounded-md">
+          <img
+            src="./img/education/hw-middle-school.png"
+            class="object-cover rounded-md h-full w-full"
+            alt=""
+          />
+          <p
+            class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-2 transition-all duration-700 cursor-pointer ease-out"
+          >
+            HW Middle School
+          </p>
+        </div>
+        <div class="h-52 relative px-8 rounded-md">
+          <img
+            src="./img/education/hw-high-school.png"
+            class="object-cover rounded-md h-full w-full"
+            alt=""
+          />
+          <p
+            class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-2 transition-all duration-700 cursor-pointer ease-out"
+          >
+            HW High School
+          </p>
         </div>
 
-        <p class="w-11/12	 mx-auto text-base text-left pb-9">
-          Nisi cumque in necessitatibus molestiae
-          eaque excepturi ab. Laboriosam ipsam
-          voluptatem voluptatibus labore quam nihil.
-          Quasi occaecati quos ratione quia aut
-          molestiae velit et. Voluptatem id ea dicta
-        </p>
+        <div class="h-52 relative px-8 rounded-lg">
+          <img
+            src="./img/education/beacon-elementary-school.png"
+            class="object-cover rounded-lg h-full w-full"
+            alt=""
+          />
+          <p
+            class="text-lg py-3 text-center rounded-lg bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-2 transition-all duration-700 cursor-pointer ease-out"
+          >
+            Beacon Elementary
+          </p>
+        </div>
+        <div class="h-52 relative px-8 rounded-md">
+          <img
+            src="./img/education/tyrone-elementary.png"
+            class="object-cover rounded-md h-full w-full"
+            alt=""
+          />
+          <p
+            class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-2 transition-all duration-700 cursor-pointer ease-out"
+          >
+            Tyrone Elementary
+          </p>
+        </div>
+        <div class="h-52 relative px-8 rounded-md">
+          <img
+            src="./img/education/hw-middle-school.png"
+            class="object-cover rounded-md h-full w-full"
+            alt=""
+          />
+          <p
+            class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-2 transition-all duration-700 cursor-pointer ease-out"
+          >
+            HW Middle School
+          </p>
+        </div>
+        <div class="h-52 relative px-8 rounded-md">
+          <img
+            src="./img/education/hw-high-school.png"
+            class="object-cover rounded-md h-full w-full"
+            alt=""
+          />
+          <p
+            class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-2 transition-all duration-700 cursor-pointer ease-out"
+          >
+            HW High School
+          </p>
+        </div>
       </div>
+    </section>
+    <section class="testimonal container">
+      <h3 class="text-center text-4xl mb-5 mt-12">Testimonial</h3>
+      <p class="w-1/2 mx-auto text-center text-base leading-7 mb-20">
+        Torquem detraxit hosti et quidem faciunt, ut et negent satis esse
+        appetendum, alterum. Si sine causa? quae fuerit causa, mox videro;
+        interea hoc epicurus in liberos.
+      </p>
+
+      <div class="testimonal-slider">
+        <div class="testimonal-card shadow-xl rounded-2xl">
+          <div
+            class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5"
+          >
+            <img
+              src="./img/testimonal/niek-bove.png"
+              class="w-11 aspect-square rounded-lg"
+              alt=""
+            />
+            <div class="card-title">
+              <h4 class="text-xl leading-tight">Niek Bove</h4>
+              <p class="text-xs text-lightGrey">Lorem ipsum</p>
+            </div>
+          </div>
+
+          <p class="w-11/12 mx-auto text-base text-left pb-9">
+            Nisi cumque in necessitatibus molestiae eaque excepturi ab.
+            Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi
+            occaecati quos ratione quia aut molestiae velit et. Voluptatem id ea
+            dicta
+          </p>
+        </div>
+
+        <div class="testimonal-card shadow-xl rounded-2xl">
+          <div
+            class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5"
+          >
+            <img
+              src="./img/testimonal/harrison-phillips.png"
+              class="w-11 aspect-square rounded-lg"
+              alt=""
+            />
+            <div class="card-title">
+              <h4 class="text-xl leading-tight">Harrison Phillips</h4>
+              <p class="text-xs text-lightGrey">Lorem ipsum</p>
+            </div>
+          </div>
+
+          <p class="w-11/12 mx-auto text-base text-left pb-9">
+            Nisi cumque in necessitatibus molestiae eaque excepturi ab.
+            Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi
+            occaecati quos ratione quia aut molestiae velit et. Voluptatem id ea
+            dicta
+          </p>
+        </div>
+        <div class="testimonal-card shadow-xl rounded-2xl">
+          <div
+            class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5"
+          >
+            <img
+              src="./img/testimonal/ainara-vergara.png"
+              class="w-11 aspect-square rounded-lg"
+              alt=""
+            />
+            <div class="card-title">
+              <h4 class="text-xl leading-tight">Ainara Vergara</h4>
+              <p class="text-xs text-lightGrey">Lorem ipsum</p>
+            </div>
+          </div>
+
+          <p class="w-11/12 mx-auto text-base text-left pb-9">
+            Nisi cumque in necessitatibus molestiae eaque excepturi ab.
+            Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi
+            occaecati quos ratione quia aut molestiae velit et. Voluptatem id ea
+            dicta
+          </p>
+        </div>
+
+        <div class="testimonal-card shadow-xl rounded-2xl">
+          <div
+            class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5"
+          >
+            <img
+              src="./img/testimonal/niek-bove.png"
+              class="w-11 aspect-square rounded-lg"
+              alt=""
+            />
+            <div class="card-title">
+              <h4 class="text-xl leading-tight">Niek Bove</h4>
+              <p class="text-xs text-lightGrey">Lorem ipsum</p>
+            </div>
+          </div>
+
+          <p class="w-11/12 mx-auto text-base text-left pb-9">
+            Nisi cumque in necessitatibus molestiae eaque excepturi ab.
+            Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi
+            occaecati quos ratione quia aut molestiae velit et. Voluptatem id ea
+            dicta
+          </p>
+        </div>
+
+        <div class="testimonal-card shadow-xl rounded-2xl">
+          <div
+            class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5"
+          >
+            <img
+              src="./img/testimonal/harrison-phillips.png"
+              class="w-11 aspect-square rounded-lg"
+              alt=""
+            />
+            <div class="card-title">
+              <h4 class="text-xl leading-tight">Harrison Phillips</h4>
+              <p class="text-xs text-lightGrey">Lorem ipsum</p>
+            </div>
+          </div>
+
+          <p class="w-11/12 mx-auto text-base text-left pb-9">
+            Nisi cumque in necessitatibus molestiae eaque excepturi ab.
+            Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi
+            occaecati quos ratione quia aut molestiae velit et. Voluptatem id ea
+            dicta
+          </p>
+        </div>
+        <div class="testimonal-card shadow-xl rounded-2xl">
+          <div
+            class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5"
+          >
+            <img
+              src="./img/testimonal/ainara-vergara.png"
+              class="w-11 aspect-square rounded-lg"
+              alt=""
+            />
+            <div class="card-title">
+              <h4 class="text-xl leading-tight">Ainara Vergara</h4>
+              <p class="text-xs text-lightGrey">Lorem ipsum</p>
+            </div>
+          </div>
+
+          <p class="w-11/12 mx-auto text-base text-left pb-9">
+            Nisi cumque in necessitatibus molestiae eaque excepturi ab.
+            Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi
+            occaecati quos ratione quia aut molestiae velit et. Voluptatem id ea
+            dicta
+          </p>
+        </div>
+
+        <div class="testimonal-card shadow-xl rounded-2xl">
+          <div
+            class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5"
+          >
+            <img
+              src="./img/testimonal/niek-bove.png"
+              class="w-11 aspect-square rounded-lg"
+              alt=""
+            />
+            <div class="card-title">
+              <h4 class="text-xl leading-tight">Niek Bove</h4>
+              <p class="text-xs text-lightGrey">Lorem ipsum</p>
+            </div>
+          </div>
+
+          <p class="w-11/12 mx-auto text-base text-left pb-9">
+            Nisi cumque in necessitatibus molestiae eaque excepturi ab.
+            Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi
+            occaecati quos ratione quia aut molestiae velit et. Voluptatem id ea
+            dicta
+          </p>
+        </div>
+
+        <div class="testimonal-card shadow-xl rounded-2xl">
+          <div
+            class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5"
+          >
+            <img
+              src="./img/testimonal/harrison-phillips.png"
+              class="w-11 aspect-square rounded-lg"
+              alt=""
+            />
+            <div class="card-title">
+              <h4 class="text-xl leading-tight">Harrison Phillips</h4>
+              <p class="text-xs text-lightGrey">Lorem ipsum</p>
+            </div>
+          </div>
+
+          <p class="w-11/12 mx-auto text-base text-left pb-9">
+            Nisi cumque in necessitatibus molestiae eaque excepturi ab.
+            Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi
+            occaecati quos ratione quia aut molestiae velit et. Voluptatem id ea
+            dicta
+          </p>
+        </div>
+
+        <div class="testimonal-card shadow-xl rounded-2xl">
+          <div
+            class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5"
+          >
+            <img
+              src="./img/testimonal/ainara-vergara.png"
+              class="w-11 aspect-square rounded-lg"
+              alt=""
+            />
+            <div class="card-title">
+              <h4 class="text-xl leading-tight">Ainara Vergara</h4>
+              <p class="text-xs text-lightGrey">Lorem ipsum</p>
+            </div>
+          </div>
+          <p class="w-11/12 mx-auto text-base text-left pb-9">
+            Nisi cumque in necessitatibus molestiae eaque excepturi ab.
+            Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi
+            occaecati quos ratione quia aut molestiae velit et. Voluptatem id ea
+            dicta
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="information bg-bgInfo py-24">
+      <div class="w-2/3 mx-auto">
+        <h3 class="mb-7 text-4xl text-primary pl-5">
+          For more information click the following links below
+        </h3>
+        <div class="content flex gap-10 items-center">
+          <div
+            class="img w-28 aspect-square rounded-full shadow-xl bg-white flex items-center justify-center"
+          >
+            <img src="./icon/Book.svg" class="w-16" alt="" />
+          </div>
+          <ul class="flex flex-col gap-1.5">
+            <li><a href="">Information about school closing procedure</a></li>
+            <li>
+              <a href=""
+                >Check out the New Harper Woods College and Career Institute
+                Click for more info!!</a
+              >
+            </li>
+            <li><a href="">2020 - 2021 Student Code of Conduct Handbook</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <h3 class="text-center text-4xl mb-5 mt-12">Testimonial</h3>
+      <p class="w-1/2 mx-auto text-center text-base leading-7 mb-20">
+        Torquem detraxit hosti et quidem faciunt, ut et negent satis esse
+        appetendum, alterum. Si sine causa? quae fuerit causa, mox videro;
+        interea hoc epicurus in liberos.
+      </p>
+      <div class="container flex">
+        <div class="progress-card flex flex-col items-center w-1/3">
+          <div class="progress-circle over50 p55">
+            <span>10%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+          <h4 class="text-base mb-5">LOREM IPSUM</h4>
+          <p class="w-3/4 text-sm leading-loose mb-11 break-all text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+        </div>
+        <div class="progress-card flex flex-col items-center w-1/3">
+          <div class="progress-circle over50 p55">
+            <span>10%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+          <h4 class="text-base mb-5">LOREM IPSUM</h4>
+          <p class="w-3/4 text-center text-sm leading-loose mb-11 break-all">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+        </div>
+        <div class="progress-card flex flex-col items-center w-1/3">
+          <div class="progress-circle over50 p55">
+            <span>10%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+          <h4 class="text-base mb-5">LOREM IPSUM</h4>
+          <p class="w-3/4 text-center text-sm leading-loose mb-11 break-all">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-primary pt-24 relative">
+      <div
+        class="container columns-auto flex flex-row justify-between gap-16 text-white pb-32"
+      >
+        <div class="w-60 pr-16">
+          <h5 class="mb-7 footer-logo text-base">HW SCHOOL DISTRICT</h5>
+          <ul class="flex flex-col gap-2 mb-12">
+            <li class="flex items-start">
+              <img src="./icon/pin.svg" class="p-1 w-5 object-contain" />
+              <p class="text-xs leading-4">
+                1500 Treat Ave, Suite 200 San Francisco, CA 94110
+              </p>
+            </li>
+            <li class="flex items-center">
+              <img src="./icon/pin.svg" class="p-1 w-5" />
+              <p class="text-xs leading-4">demo@hwschool.com</p>
+            </li>
+            <li class="flex items-center">
+              <img src="./icon/pin.svg" class="p-1 w-5" />
+              <p class="text-xs leading-4">586-217-2163 (Support)</p>
+            </li>
+          </ul>
+          <h5 class="mb-7 text-base">FOLLOW US</h5>
+          <ul class="flex gap-1 mb-12">
+            <li
+              class="w-7 h-7 rounded-full border border-white flex justify-center items-center"
+            >
+              <img src="./icon/fb.svg" class="h-3 object-contain" alt="" />
+            </li>
+            <li
+              class="w-7 h-7 rounded-full border border-white flex justify-center items-center"
+            >
+              <img src="./icon/fb.svg" class="h-3 object-contain" alt="" />
+            </li>
+            <li
+              class="w-7 h-7 rounded-full border border-white flex justify-center items-center"
+            >
+              <img src="./icon/fb.svg" class="h-3 object-contain" alt="" />
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="mb-7 text-base">Schools</h5>
+          <ul class="flex flex-col gap-2">
+            <li><a href="" class="text-xs">Beacon Elementary</a></li>
+            <li><a href="" class="text-xs">Tyrone Elementary</a></li>
+            <li><a href="" class="text-xs">HW Middle School</a></li>
+            <li><a href="" class="text-xs">HW High School</a></li>
+            <li><a href="" class="text-xs">Harper Academy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="mb-7 text-base">District Info</h5>
+          <ul class="flex flex-col gap-2">
+            <li><a href="" class="text-xs">Home</a></li>
+            <li><a href="" class="text-xs">Board of Education</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="mb-7 text-base">More</h5>
+          <ul class="flex flex-col gap-2">
+            <li><a href="" class="text-xs">Menu</a></li>
+            <li><a href="" class="text-xs">Illuminate Education</a></li>
+            <li><a href="" class="text-xs">MI Star Parents</a></li>
+            <li><a href="" class="text-xs">MI Star Students</a></li>
+            <li><a href="" class="text-xs">MI Star Teachers</a></li>
+            <li><a href="" class="text-xs">KB Compass</a></li>
+            <li><a href="" class="text-xs">Atlas Rubicon Parents </a></li>
+            <li><a href="" class="text-xs">Atlas Rubicon Teachers </a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="mb-7 text-base">Listen Now</h5>
+       
+            <img src="./img/u184.svg" class="h-8 object-contain mb-9" alt="">
+
+          <h5 class="mb-4 text-base">Transparency Reporting</h5>
      
-
-      <div class="testimonal-card shadow-xl rounded-2xl ">
-        <div class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5 ">
-          <img src="./img/testimonal/niek-bove.png" class="w-11 aspect-square rounded-lg" alt="">
-          <div class="card-title">
-            <h4 class="text-xl leading-tight		">Niek Bove</h4>
-            <p class="text-xs	text-lightGrey">Lorem ipsum</p>
-          </div>
+            <img src="./img/u178.svg" class="h-8 object-cover mb-7" alt="">
+          <span class="text-xs block">MI School Data</span>
         </div>
-
-        <p class="w-11/12	 mx-auto text-base text-left pb-9">
-          Nisi cumque in necessitatibus molestiae
-          eaque excepturi ab. Laboriosam ipsam
-          voluptatem voluptatibus labore quam nihil.
-          Quasi occaecati quos ratione quia aut
-          molestiae velit et. Voluptatem id ea dicta
-        </p>
       </div>
-
-      <div class="testimonal-card shadow-xl rounded-2xl ">
-        <div class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5 ">
-          <img src="./img/testimonal/harrison-phillips.png" class="w-11 aspect-square rounded-lg" alt="">
-          <div class="card-title">
-            <h4 class="text-xl leading-tight		">Harrison Phillips</h4>
-            <p class="text-xs	text-lightGrey">Lorem ipsum</p>
-          </div>
-        </div>
-
-        <p class="w-11/12	 mx-auto text-base text-left pb-9">
-          Nisi cumque in necessitatibus molestiae
-          eaque excepturi ab. Laboriosam ipsam
-          voluptatem voluptatibus labore quam nihil.
-          Quasi occaecati quos ratione quia aut
-          molestiae velit et. Voluptatem id ea dicta
-        </p>
-      </div>
-      <div class="testimonal-card shadow-xl rounded-2xl ">
-        <div class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5 ">
-          <img src="./img/testimonal/ainara-vergara.png" class="w-11 aspect-square rounded-lg" alt="">
-          <div class="card-title">
-            <h4 class="text-xl leading-tight		">Ainara Vergara</h4>
-            <p class="text-xs	text-lightGrey">Lorem ipsum</p>
-          </div>
-        </div>
-
-        <p class="w-11/12	 mx-auto text-base text-left pb-9">
-          Nisi cumque in necessitatibus molestiae
-          eaque excepturi ab. Laboriosam ipsam
-          voluptatem voluptatibus labore quam nihil.
-          Quasi occaecati quos ratione quia aut
-          molestiae velit et. Voluptatem id ea dicta
-        </p>
-      </div>
-
-      <div class="testimonal-card shadow-xl rounded-2xl ">
-        <div class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5 ">
-          <img src="./img/testimonal/niek-bove.png" class="w-11 aspect-square rounded-lg" alt="">
-          <div class="card-title">
-            <h4 class="text-xl leading-tight		">Niek Bove</h4>
-            <p class="text-xs	text-lightGrey">Lorem ipsum</p>
-          </div>
-        </div>
-
-        <p class="w-11/12	 mx-auto text-base text-left pb-9">
-          Nisi cumque in necessitatibus molestiae
-          eaque excepturi ab. Laboriosam ipsam
-          voluptatem voluptatibus labore quam nihil.
-          Quasi occaecati quos ratione quia aut
-          molestiae velit et. Voluptatem id ea dicta
-        </p>
-      </div>
-
-      <div class="testimonal-card shadow-xl rounded-2xl ">
-        <div class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5 ">
-          <img src="./img/testimonal/harrison-phillips.png" class="w-11 aspect-square rounded-lg" alt="">
-          <div class="card-title">
-            <h4 class="text-xl leading-tight		">Harrison Phillips</h4>
-            <p class="text-xs	text-lightGrey">Lorem ipsum</p>
-          </div>
-        </div>
-
-        <p class="w-11/12	 mx-auto text-base text-left pb-9">
-          Nisi cumque in necessitatibus molestiae
-          eaque excepturi ab. Laboriosam ipsam
-          voluptatem voluptatibus labore quam nihil.
-          Quasi occaecati quos ratione quia aut
-          molestiae velit et. Voluptatem id ea dicta
-        </p>
-      </div>
-
-      <div class="testimonal-card shadow-xl rounded-2xl ">
-        <div class="card-profile flex gap-5 items-center w-11/12 mx-auto my-5 ">
-          <img src="./img/testimonal/ainara-vergara.png" class="w-11 aspect-square rounded-lg" alt="">
-          <div class="card-title">
-            <h4 class="text-xl leading-tight		">Ainara Vergara</h4>
-            <p class="text-xs	text-lightGrey">Lorem ipsum</p>
-          </div>
-        </div>
-        <p class="w-11/12	 mx-auto text-base text-left pb-9">
-          Nisi cumque in necessitatibus molestiae
-          eaque excepturi ab. Laboriosam ipsam
-          voluptatem voluptatibus labore quam nihil.
-          Quasi occaecati quos ratione quia aut
-          molestiae velit et. Voluptatem id ea dicta
-        </p>
-      </div>
-
-    </div>
-  </section>
-  <section class="information bg-bgInfo py-24">
-    <div class="w-2/3  mx-auto">
-      <h3 class="mb-7 text-4xl	text-primary pl-5">For more information click the following links below</h3>
-      <div class="content flex gap-10 items-center">
-        <div class="img w-28	aspect-square rounded-full shadow-xl bg-white flex items-center justify-center	">
-          <img src="./icon/Book.svg" class="w-16" alt="">
-        </div>
-       <ul class="flex flex-col gap-1.5">
-         <li><a href="">Information about school closing procedure</a></li>
-         <li><a href="">Check out the New Harper Woods College and Career Institute   Click for more  info!!</a></li>
-     <li><a href="">2020 - 2021 Student Code of Conduct Handbook</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="offer">
-    <div class="progress-circle p99">
-      <span>10%</span>
-      <div class="left-half-clipper">
-         <div class="first50-bar"></div>
-         <div class="value-bar"></div>
-      </div>
-   </div>
-  </section>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script src="./js/slick.js"></script>
-</body>
+      <p class="text-xs text-center text-white py-6 copyright">© COPYRIGHT 2021. ​ALL RIGHTS RESERVED.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
+  </body>
 </html>
