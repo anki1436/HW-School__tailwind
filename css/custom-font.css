@@ -1,0 +1,61 @@
+
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('../custom-font/CircularStd-Book.eot');
+    src: url('../custom-font/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('../custom-font/CircularStd-Book.woff2') format('woff2'),
+        url('../custom-font/CircularStd-Book.woff') format('woff'),
+        url('../custom-font/CircularStd-Book.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../custom-font/CircularStd-Black.eot');
+    src: url('../custom-font/CircularStd-Black.eot?#iefix') format('embedded-opentype'),
+        url('../custom-font/CircularStd-Black.woff2') format('woff2'),
+        url('../custom-font/CircularStd-Black.woff') format('woff'),
+        url('../custom-font/CircularStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../custom-font/CircularStd-Bold.eot');
+    src: url('../custom-font/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../custom-font/CircularStd-Bold.woff2') format('woff2'),
+        url('../custom-font/CircularStd-Bold.woff') format('woff'),
+        url('../custom-font/CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../custom-font/CircularStd-Medium.eot');
+    src: url('../custom-font/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../custom-font/CircularStd-Medium.woff2') format('woff2'),
+        url('../custom-font/CircularStd-Medium.woff') format('woff'),
+        url('../custom-font/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../custom-font/Roboto-Regular.eot');
+    src: url('../custom-font/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../custom-font/Roboto-Regular.woff2') format('woff2'),
+        url('../custom-font/Roboto-Regular.woff') format('woff'),
+        url('../custom-font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

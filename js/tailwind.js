@@ -16,9 +16,14 @@ tailwind.config = {
           lightGrey:"rgba(55, 71, 79, 0.65)",
           textColor:"#37474F",
           bgInfo:"#841e2515",
-          navBg:"#FBF9F9"
+          navBg:"#FBF9F9",
+          transparent:"transparent"
 
 
+        },
+        fontFamily: {
+          'book': '"Circular Std Book"',
+          'roboto':'"Roboto"'  ,        
         }
       }
     }
