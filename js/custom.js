@@ -1,76 +1,31 @@
-console.log("ii");
-// const navOption =document.querySelectorAll(".nav-link")
-// console.log(navOption);
-// navOption.forEach(el,function(){
-//     el.onCl
-// })
-// for(var i=0;i<navOption.length;i++){
-//     navOption[i].addEventListener("click", function(){alert(i)}, false);   
-//     console.log(navOption[i]);
-// var school= document.getElementById("#school")
-// // }
-// // navOption.forEach(openOption);
-// function openOption(){
-//     // console.log(el);
-//     // navOption
-//     school.style.display="flex";
-// $(".dropdown").slideUp();
+$(document).ready(function () {
+    let options = {
+      startAngle: -1.55,
+      size: 100,
+      value: 0.34,
+      fill: {
+        gradient: ['#841E25', '#841E25']
+      }
+    }
+    console.log("hoioo");
+    $(".progressbar__circle .progressbar__bar").circleProgress(options).on('circle-animation-progress',
+      function (event, progress, stepValue) {
+        console.log("no");
 
-$(document).ready(function(){
-
-    $(".school.button").click(function(){
-        $(".school.dropdown").show();
-        $(".dropdown").slideToggle();
-
+        $(this).parent().find(".progressbar__percentage").text(String(stepValue.toFixed(2).substr(2)) + "%");
+      });
+    $(".js .progressbar__bar").circleProgress({
+      value: 0.74,
+      fill: {
+        gradient: ['#70CE88', '#70CE88']
+      }
     });
-    $(".school.button").blur(function(){
-        $(".school.dropdown").hide();
-    });
-
-    $(".district.button").click(function(){
-        $(".district.dropdown").show();
-        $(".dropdown").slideUp();
-
-    });
-    $(".district.button").blur(function(){
-        $(".district.dropdown").hide();
-    });
-    $(".eduService.button").click(function(){
-        $(".eduService.dropdown").show();
-        $(".dropdown").slideUp();
-
-    });
-    $(".eduService.button").blur(function(){
-        $(".eduService.dropdown").hide();
-    });
-    $(".athelete.button").click(function(){
-        $(".athelete.dropdown").show();
-        $(".dropdown").slideUp();
-
-    });
-    $(".athelete.button").blur(function(){
-        $(".athelete.dropdown").hide();
-    });
-    $(".more.button").click(function(){
-        $(".more.dropdown").show();
-        $(".dropdown").slideUp();
-
-    });
-    $(".more.button").blur(function(){
-        $(".more.dropdown").hide();
-    });
-    // $(".school.button").blur(function(){
-    //     $(".school.dropdown").hide();
-    //     // $(".dropdown").slideUp();
-
-    // });
-    // $(".school.button").blur(function(){
-    //     $(".school.dropdown").hide();
-    //     // $(".dropdown").slideUp();
-
-    // });
-    
-});
+    $(".react .progressbar__bar").circleProgress({
+      value: 0.44,
+      fill: {
+        gradient: ['#FFBA49', '#FFBA49']
+      }
+    }); });
     // $(".district.button").click(function(){
 
     //     $(".district.dropdown").show();
@@ -112,4 +67,21 @@ $(document).ready(function(){
                         });
 
 
- 
+// const menuContainer =document.getElementById("menu");
+// const menuBtn =document.getElementById("menubar")  ;
+// menuBtn.onclick              
+$('#menubar').click(function() {
+    $("#navClose").css({"display":"block"})
+    $('#menu').animate({
+        'right': '0',
+     
+    });
+});
+$('#navClose').click(function() {
+    $('#menu').animate({
+        "right":"-100%",
+        'position': 'static',    
+    });
+    $("#navClose").css({"display":"none"})
+
+});

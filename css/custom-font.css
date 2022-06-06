@@ -30,7 +30,7 @@
         url('../custom-font/CircularStd-Bold.woff2') format('woff2'),
         url('../custom-font/CircularStd-Bold.woff') format('woff'),
         url('../custom-font/CircularStd-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }

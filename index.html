@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HW SCHOOL DISTRICT</title>
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
+<link rel="stylesheet" href="./css/custom-font.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="stylesheet" href="./css/slick-theme.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
@@ -16,11 +16,11 @@
 
 </head>
 
-<body>
+<body >
   <header class="sticky top-0 z-20">
-    <div class="bg-primary header">
-      <div class="container text-grey flex justify-center md:justify-between flex-wrap">
-        <div class="flex flex-row">
+    <div class="bg-primary header ">
+      <div class="container text-grey gap-5 flex justify-center md:justify-between flex-wrap">
+        <div class="flex flex-row flex-wrap justify-center items-center gap-2 md:gap-0 font-book">
           <a class="flex flex-row items-center justify-center mr-8" href="tel:586-217-2163">
             <img src="./icon/call.svg" class="object-contain w-2.5 mr-1.5" alt="" />
             <span class="text-xs">Support Hotline : 586-217-2163</span>
@@ -31,7 +31,7 @@
           </a>
         </div>
         <div class="flex flex-row">
-          <a class="btn rounded-full flex items-center bg-white text-xs text-dark mr-5 leading-none py-2 px-8">
+          <a class="btn rounded-full flex items-center bg-white text-xs text-dark mr-5 leading-none py-2 px-6 md:px-8 font-normal	">
             Sign up
           </a>
           <div class="btn-option rounded-full flex items-center bg-primary border border-white">
@@ -47,13 +47,14 @@
       </div>
     </div>
     <nav class="bg-white">
-      <div class="container flex justify-between py-3">
-        <a class="logo flex items-center text-base " href="#">
+      <div class="container relative flex justify-between py-3">
+        <a class="logo flex items-center text-base text-[#002147] font-normal" href="#">
           <img src="./icon/hw-logo.svg" class="w-11 h-11 mr-1.5" alt="hw" />
           HW SCHOOL DISTRICT
         </a>
-        <ul class="flex items-center " >
-          <a href="#" id="menubar"><i class="fas fa-bars"></i></a>
+        <a href="#" id="menubar"><i class="fas fa-bars"></i></a>
+      
+        <ul class="flex items-center ">
 <ul  class="nav__items" id="menu">
   <a href="#" id="navClose">X</a>
   <li class="nav__item">
@@ -104,7 +105,7 @@
   
   
   </li>
-  <li class="ml-4 relative nav__item ">
+  <li class="lg:ml-4  nav__item">
     <a href="#" class="search-icon flex justify-between items-center border rounded-full border-borderColor  " id="search"><img src="./icon/search.svg" class="w-4 my-1 mx-3" alt=""></i>  </a>        
   </li>
  
@@ -118,33 +119,33 @@
 
   <section class="banner relative">
     <div class="banner-bg"></div>
-    <img src="./img/group-of-student.png" class="absolute bottom-0 right-0 w-1/2" alt="" />
-    <div class="container flex items-center justify-start h-full">
-      <div class="banner-content text-white w-2/4 ml-20">
-        <h1 class="text-5xl mb-7">
+    <img src="./img/group-of-student.png" class="absolute bottom-0 right-0 w-5/7	 md:w-1/2" alt="" />
+    <div class="container flex  items-start md:items-center justify-center lg:justify-start h-full">
+      <div class="banner-content text-white w-full lg:w-1/2 lg:ml-20 mt-20 sm:mt-0">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl mb-3 md:mb-5 lg:mb-7">
           We are determined to achieve the highest standards
         </h1>
-        <p class="text-base w-3/4 mb-5">
+        <p class="text-base w-3/4 mb-5 font-book text-[#7D7D7D]">
           We are always availed to consult on taking your higher education to
           the next level so you can stay competitive in the global world.
         </p>
-        <a class="inline-flex items-center rounded-full btn bg-primary py-4 px-8 leading-7">Enroll Now <img
+        <a class="inline-flex items-center rounded-full  bg-primary   py-3 lg:py-4  px-6 lg:px-8 leading-5 lg:leading-7">Enroll Now <img
             src="./icon/forward.svg" class="ml-5 h-3" alt="" /></a>
       </div>
     </div>
   </section>
   <section class="blog bg-white">
-    <div class="mx-auto w-fit flex py-28 px-10 justify-center flex-wrap">
-      <div class="blog-img w-96 md:mr-10 pb-6 relative">
+    <div class="mx-auto  flex py-28 px-2 sm:px-10 justify-center flex-wrap gap-10">
+      <div class="blog-img  w-4/7 sm:w-96  pb-6 relative">
         <img src="./img/portrait-confident-senior-businessman-office.png" class="w-full rounded-2xl"
           alt="senior businessman wearing blue shirt " />
         <a
-          class="w-max bg-secondary absolute z-2 px-24 py-4 rounded leading-4 bottom-1 left-1/2 transform -translate-x-1/2">Kimmie
+          class="w-max bg-secondary absolute z-2 px-16  sm:px-24 py-4 rounded leading-4 bottom-1 left-1/2 transform -translate-x-1/2">Kimmie
           Vo</a>
       </div>
-      <div class="blog-content w-96 flex flex-col justify-between">
-        <h2 class="text-3xl">Superintendent Image & Name</h2>
-        <p class="text-base">
+      <div class="blog-content w-full  sm:w-96 flex flex-col justify-between">
+        <h2 class="text-3xl pr-4">Superintendent Image & Name</h2>
+        <p class="text-base font-book ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -159,12 +160,12 @@
 
   <section class="mission bg-primary">
     <div class="container pb-12">
-      <div class="flex px-20 items-center mission-con mb-16">
-        <div class="w-72 mission-img mr-10 rounded-2xl position-relative z-10">
+      <div class="flex  justify-center flex-col md:flex-row md:justify-start items-center mission-con mb-16 flex-wrap gap-11">
+        <div class="w-72 mission-img  rounded-2xl position-relative z-10">
           <img src="./img/mission.png" class="w-72 rounded-2xl" alt="" />
         </div>
 
-        <div class="mission-content text-white w-2/5 pr-5">
+        <div class="mission-content text-white w-full md:w-1/2 ">
           <h3 class="text-3xl mb-3.5">Mission</h3>
           <p class="text-base mb-4">
             The Mission of Harper Woods School District is to provide a
@@ -179,8 +180,8 @@
         </div>
 
       </div>
-      <div class="flex px-20 items-center justify-end mission-con">
-        <div class="mission-content text-white w-2/5 pr-5 mb-10">
+      <div class="flex items-center flex-col md:flex-row justify-center md:justify-end  mission-con flex-wrap-reverse gap-10">
+        <div class="mission-content text-white w-full md:w-1/2  mb-20">
           <h3 class="text-3xl mb-3.5">Vision</h3>
           <p class="text-base mb-3">
             Harper Woods School District is dedicated to providing a world
@@ -193,7 +194,7 @@
           </p>
           <a href="" class="bg-white rounded-full text-base text-dark py-2 px-11 inline-flex">Read more</a>
         </div>
-        <div class="w-72 mission-img mr-10 rounded-2xl position-relative z-10">
+        <div class="w-72 mission-img  rounded-2xl position-relative z-10">
           <img src="./img/vision.png" class="w-72 rounded-2xl" alt="" />
         </div>
       </div>
@@ -510,56 +511,55 @@
     </div>
   </section>
 
-  <section class="offer">
-    <h3 class="text-center text-4xl mb-5 mt-12">Testimonial</h3>
-    <p class="w-1/2 mx-auto text-center text-base leading-7 mb-20">
-      Torquem detraxit hosti et quidem faciunt, ut et negent satis esse
-      appetendum, alterum. Si sine causa? quae fuerit causa, mox videro;
-      interea hoc epicurus in liberos.
-    </p>
-    <div class="container flex">
-      <div class="progress-card flex flex-col items-center w-1/3">
-        <div class="progress">
-          <span class="title timer" data-from="0" data-to="85" data-speed="1800">85%</span>
-          <div class="overlay"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-      </div>
-
-        <h4 class="text-base mb-5">LOREM IPSUM</h4>
-        <p class="w-3/4 text-sm leading-loose mb-11 break-all text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore
-        </p>
-      </div>
-      <div class="progress-card flex flex-col items-center w-1/3">
-        <div class="progress">
-          <span class="title timer" data-from="0" data-to="85" data-speed="1800">85%</span>
-          <div class="overlay"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-      </div>
-        <h4 class="text-base mb-5">LOREM IPSUM</h4>
-        <p class="w-3/4 text-center text-sm leading-loose mb-11 break-all ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore
-        </p>
-      </div>
-      <div class="progress-card flex flex-col items-center w-1/3">
-        <div class="progress">
-          <span class="title timer" data-from="0" data-to="85" data-speed="1800">85%</span>
-          <div class="overlay"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-      </div>
-        <h4 class="text-base mb-5 ">LOREM IPSUM</h4>
-        <p class="w-3/4 text-center text-sm leading-loose mb-11 break-all">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore
-        </p>
+  <section class="progressbar">
+    <div class="container">
+      <h4 class="progressbar__heading">Lorem Ipsum Dolar</h4>
+      <p class="progressbar__heading-desc">Torquem detraxit hosti et quidem faciunt, ut et negent satis esse
+        appetendum, alterum.
+        Si sine causa? quae fuerit causa,
+        mox videro; interea hoc epicurus in liberos.
+      </p>
+      <div class="progressbar__wrapper">
+        <div class="progressbar__card active">
+          <div class="progressbar__circle">
+            <div class="progressbar__bar"></div>
+            <div class="progressbar__box"><span class="progressbar__percentage"></span></div>
+          </div>
+          <div>
+            <h5 class="progressbar__title">LOREM IPSUM</h5>
+            <p class="progressbar__title-desc">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore </p>
+          </div>
+        </div>
+        <div class="progressbar__card js">
+          <div class="progressbar__circle middle">
+            <div class="progressbar__bar"></div>
+            <div class="progressbar__box"><span class="progressbar__percentage"></span></div>
+          </div>
+          <div>
+            <h5 class="progressbar__title">LOREM IPSUM</h5>
+            <p class="progressbar__title-desc">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore </p>
+          </div>
+        </div>
+        <div class="progressbar__card react">
+          <div class="progressbar__circle right">
+            <div class="progressbar__bar"></div>
+            <div class="progressbar__box"><span class="progressbar__percentage"></span></div>
+          </div>
+          <div>
+            <h5 class="progressbar__title">LOREM IPSUM</h5>
+            <p class="progressbar__title-desc">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
   <footer class="bg-primary pt-24 relative">
     <div class="container columns-auto flex flex-row flex-wrap justify-between  text-white pb-32">
       <div class="w-60 pl-16">
@@ -650,8 +650,7 @@
   
   </div>   
 
-
-
+ 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -659,6 +658,7 @@
 
   <script src="./js/tailwind.js"></script>
   <script src="./js/slick.js"></script>
+  <script src="./js/cdn/circleProgress.js"></script>
   <script src="./js/custom.js"></script>
 </body>
 
