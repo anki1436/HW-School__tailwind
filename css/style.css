@@ -1,3 +1,6 @@
+*{
+  font-weight: 400;
+}
 select {
   outline: none;
 }
@@ -32,7 +35,11 @@ a{
     background-image: url("../img/pillar-structure-bg.webp");
   background-size: cover;
   position: relative;
-  z-index: -1;
+  z-index: 1;
+}
+.blog-bg{
+  transform:rotate(90deg) translateX(-125px);
+  right: 0;
 }
 .banner-bg {
   position: absolute;
