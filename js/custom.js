@@ -85,3 +85,7 @@ $('#navClose').click(function() {
     $("#navClose").css({"display":"none"})
 
 });
+$('.lang-btn').click(function() {
+$('.lang-dropdown').toggleClass("lang-on")
+
+});
