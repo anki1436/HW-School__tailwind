@@ -20,7 +20,7 @@
 </head>
 
 <body >
-  <header class="sticky top-0 z-40">
+  <header class="fixed w-full top-0 z-40">
     <div class="bg-primary header relative z-20">
       <div class="container text-grey gap-5 flex justify-center md:justify-between flex-wrap">
         <div class="flex flex-row flex-wrap justify-center items-center gap-2 md:gap-0 font-book">
@@ -34,12 +34,12 @@
           </a>
         </div>
         <div class="flex flex-row">
-          <a class="btn rounded-full flex items-center bg-white text-xs font-black text-[#040404] mr-5 leading-none py-2 px-6 md:px-8 font-normal	">
+          <a class="btn rounded-full flex items-center bg-white  text-xs font-black text-[#040404]  mr-5 leading-none py-2 px-6 md:px-8 font-normal border border-white hover:bg-primary hover:text-white	transition-all duration-700  ease-out">
             Sign up
           </a>
           <div class="btn-option rounded-full flex items-center bg-primary border border-white relative">
  
-            <a href="#" class="lang-btn bg-primary text-white font-black text-xs leading-none flex gap-1.5">Select Language <img src="./icon/lang-downArrow.png"   class="w-3 object-contain" alt=""></a>
+            <a href="#" class="lang-btn bg-primary  text-white  text-xs leading-none flex gap-1.5">Select Language <img src="./icon/lang-downArrow.png"   class="w-3 object-contain" alt=""></a>
     <ul class="lang-dropdown bg-primary">
       <li>
         <a href="#" class="nav__item__link text-xs text-white text-center block">Hindi</a>
@@ -53,14 +53,16 @@
       </div>
     </div>
     <nav class="bg-white relative z-10">
-      <div class="container relative flex justify-between py-3">
+      <div class="container  py-3 relative flex justify-between ">
+
         <a class="logo flex items-center text-sm lg:text-base font-book text-[#002147] font-normal" href="#">
+
           <img src="./icon/hw-logo.svg" class="w-11 h-11 mr-1.5" alt="hw" />
           HW SCHOOL DISTRICT
         </a>
         <a href="#" id="menubar"><i class="fa-solid fa-bars"></i></a>
       
-        <ul class="flex items-center ">
+        <ul class="flex items-center "> 
 <ul  class="nav__items" id="menu">
   <a href="#" id="navClose"><i class="fas fa-close"></i></a>
   <li class="nav__item">
@@ -125,7 +127,7 @@
       </li>
     </ul>
   </li>
-  <li class="lg:ml-4  nav__item">
+  <li class="lg:ml-4 search-icon-container  nav__item">
     <a href="#" class="search-icon flex justify-between items-center border rounded-full border-borderColor  " id="search"><img src="./icon/search.svg" class="w-4 my-1 mx-3" alt=""></i>  </a>        
   </li>
  
@@ -141,7 +143,7 @@
     <div class="banner-bg"></div>
     <img src="./img/group-of-student.png" class="absolute bottom-0 right-0 w-5/7	 md:w-1/2" alt="" />
     <div class="container flex  items-start md:items-center justify-center lg:justify-start h-full">
-      <div class="banner-content text-white w-full lg:w-1/2  mt-10 md:mt-0">
+      <div class="banner-content text-white w-full lg:w-2/5 xl:w-1/2  mt-10 md:mt-0">
         <h1 class="text-3xl md:text-4xl lg:text-5xl mb-3 md:mb-5 lg:mb-7">
           We are determined to achieve the highest standards
         </h1>
@@ -149,7 +151,7 @@
           We are always availed to consult on taking your higher education to
           the next level so you can stay competitive in the global world.
         </p>
-        <a class="inline-flex items-center rounded-full  bg-primary   py-1 lg:py-1.5  px-6 lg:px-8 leading-5 lg:leading-7" href="#">Enroll Now <img
+        <a class="inline-flex items-center rounded-full  bg-primary hover:bg-secondary hover:text-primary   py-1 lg:py-1.5  px-6 lg:px-8 leading-5 lg:leading-7 transition-all duration-700  ease-out" href="#">Enroll Now <img
             src="./icon/forward.svg" class="ml-5 h-3" alt="" /></a>
       </div>
     </div>
@@ -195,7 +197,7 @@
             readiness.
           </p>
           <a href=""
-            class="bg-white rounded-full text-base text-dark py-2 px-11 inline-flex cursor-pointer shadow-xl">Read
+            class="bg-white rounded-full text-base text-dark py-2 px-11 inline-flex cursor-pointer shadow-xl  border border-white hover:bg-primary hover:text-white	transition-all duration-700  ease-out">Read
             more</a>
         </div>
 
@@ -212,7 +214,7 @@
             2. Inspire a passion for life-long learning <br />
             3. Prepare students to compete in a global society
           </p>
-          <a href="" class="bg-white rounded-full text-base text-dark py-2 px-11 inline-flex">Read more</a>
+          <a href="" class="bg-white rounded-full text-base text-dark py-2 px-11 inline-flex  border border-white hover:bg-primary hover:text-white	transition-all duration-700  ease-out">Read more</a>
         </div>
         <div class="w-72 mission-img  rounded-2xl position-relative z-10">
           <img src="./img/vision.png" class="w-72 rounded-2xl" alt="" />
@@ -228,7 +230,7 @@
     </p>
     <div class="flex gap-x-7 gap-y-10 max-w-4xl mx-auto justify-center flex-wrap">
       <div
-        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out">
+        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700  ease-out">
         <div class="icon rounded-full bg-dark p-4 w-fit mb-5">
           <img src="./icon/target.svg" alt="" class="h-6 aspect-square" />
         </div>
@@ -239,7 +241,7 @@
         </p>
       </div>
       <div
-        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out">
+        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700  ease-out">
         <div class="icon rounded-full bg-pink p-4 w-fit mb-5">
           <img src="./icon/feather-book-open.svg" alt="" class="h-6 aspect-square" />
         </div>
@@ -250,7 +252,7 @@
         </p>
       </div>
       <div
-        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out">
+        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700  ease-out">
         <div class="icon rounded-full bg-green p-4 w-fit mb-5">
           <img src="./icon/paper-tick.svg" alt="" class="h-6 aspect-square" />
         </div>
@@ -261,7 +263,7 @@
         </p>
       </div>
       <div
-        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out">
+        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700  ease-out">
         <div class="icon rounded-full aspect-square bg-blue p-4 w-fit mb-5">
           <img src="./icon/home.svg" alt="" class="h-6 aspect-square" />
         </div>
@@ -272,7 +274,7 @@
         </p>
       </div>
       <div
-        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700 cursor-pointer ease-out">
+        class="service-card rounded-lg shadow-lg pl-3.5 pt-7 pr-7 pb-14 text-black hover:text-white bg-white hover:bg-primary transition-all duration-700  ease-out">
         <div class="icon rounded-full aspect-square bg-yellow p-4 w-fit mb-5">
           <img src="./icon/medal.svg" alt="" class="h-6 aspect-square" />
         </div>
@@ -292,60 +294,60 @@
       tempor incididunt ut labore et dolore magna aliqua!
     </p>
     <div class="student-slider  md:px-12 pb-2">
-      <div class="h-52 relative px-8 rounded-lg">
+      <div class="h-60 relative px-8 rounded-lg">
         <img src="./img/education/beacon-elementary-school.png" class="object-cover rounded-lg h-full w-full" alt="" />
         <p
-          class="text-lg py-3 text-center rounded-lg bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
+          class="text-lg  text-center rounded-lg bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 bottom-0 transition-all duration-700 cursor-pointer ease-out">
           Beacon Elementary
         </p>
       </div>
-      <div class="h-52 relative px-8 rounded-md">
+      <div class="h-60 relative px-8 rounded-md">
         <img src="./img/education/tyrone-elementary.png" class="object-cover rounded-md h-full w-full" alt="" />
         <p
-          class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
+          class="text-lg  text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
           Tyrone Elementary
         </p>
       </div>
-      <div class="h-52 relative px-8 rounded-md">
+      <div class="h-60 relative px-8 rounded-md">
         <img src="./img/education/hw-middle-school.png" class="object-cover rounded-md h-full w-full" alt="" />
         <p
-          class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
+          class="text-lg  text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
           HW Middle School
         </p>
       </div>
-      <div class="h-52 relative px-8 rounded-md">
+      <div class="h-60 relative px-8 rounded-md">
         <img src="./img/education/hw-high-school.png" class="object-cover rounded-md h-full w-full" alt="" />
         <p
-          class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
+          class="text-lg  text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
           HW High School
         </p>
       </div>
 
-      <div class="h-52 relative px-8 rounded-lg">
+      <div class="h-60 relative px-8 rounded-lg">
         <img src="./img/education/beacon-elementary-school.png" class="object-cover rounded-lg h-full w-full" alt="" />
         <p
-          class="text-lg py-3 text-center rounded-lg bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
+          class="text-lg  text-center rounded-lg bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
           Beacon Elementary
         </p>
       </div>
-      <div class="h-52 relative px-8 rounded-md">
+      <div class="h-60 relative px-8 rounded-md">
         <img src="./img/education/tyrone-elementary.png" class="object-cover rounded-md h-full w-full" alt="" />
         <p
-          class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
+          class="text-lg  text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
           Tyrone Elementary
         </p>
       </div>
-      <div class="h-52 relative px-8 rounded-md">
+      <div class="h-60 relative px-8 rounded-md">
         <img src="./img/education/hw-middle-school.png" class="object-cover rounded-md h-full w-full" alt="" />
         <p
-          class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
+          class="text-lg  text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
           HW Middle School
         </p>
       </div>
-      <div class="h-52 relative px-8 rounded-md">
+      <div class="h-60 relative px-8 rounded-md">
         <img src="./img/education/hw-high-school.png" class="object-cover rounded-md h-full w-full" alt="" />
         <p
-          class="text-lg py-3 text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
+          class="text-lg  text-center rounded-md bg-white shadow-lg hover:bg-primary text-black hover:text-white absolute inset-x-8 -bottom-0 transition-all duration-700 cursor-pointer ease-out">
           HW High School
         </p>
       </div>
@@ -521,12 +523,12 @@
           <img src="./icon/Book.svg" class="w-16" alt="" />
         </div>
         <ul class="flex flex-col gap-1.5">
-          <li><a href="">Information about school closing procedure</a></li>
+          <li><a href="" class="hover:text-primary">Information about school closing procedure</a></li>
           <li>
-            <a href="">Check out the New Harper Woods College and Career Institute
+            <a href=""  class="hover:text-primary">Check out the New Harper Woods College and Career Institute
               Click for more info!!</a>
           </li>
-          <li><a href="">2020 - 2021 Student Code of Conduct Handbook</a></li>
+          <li><a href=""  class="hover:text-primary">2020 - 2021 Student Code of Conduct Handbook</a></li>
         </ul>
       </div>
     </div>
@@ -588,28 +590,28 @@
         <ul class="flex flex-col gap-2 mb-12">
           <li class="flex items-start gap-1">
             <img src="./icon/pin.svg" class="p-1 w-5 object-contain" />
-            <a class="text-xs leading-4" href="https://goo.gl/maps/PozCJgSmFShocw1DA" target="_blank">
+            <a class="text-xs leading-4 hover:text-grey" href="https://goo.gl/maps/PozCJgSmFShocw1DA" target="_blank">
               1500 Treat Ave, Suite 200 San Francisco, CA 94110
             </a>
           </li>
           <li class="flex items-center gap-1">
             <img src="./icon/mail.png" class="p-1 w-5" />
-            <a class="text-xs leading-4 font-book" class href="mailto:demo@hwschool.com">demo@hwschool.com</a>
+            <a class="text-xs leading-4 font-book hover:text-grey" href="mailto:demo@hwschool.com">demo@hwschool.com</a>
           </li>
           <li class="flex items-center gap-1">
             <img src="./icon/phone.png" class="p-1 w-5" />
-            <a class="text-xs leading-4" href="tel:586-217-2163">586-217-2163 (Support)</a>
+            <a class="text-xs leading-4 hover:text-grey" href="tel:586-217-2163">586-217-2163 (Support)</a>
           </li>
         </ul>
         <h4 class="mb-7 text-base">FOLLOW US</h4>
         <ul class="flex gap-1 mb-12">
-          <li class="w-8 h-8 rounded-full border border-white flex justify-center items-center">
+          <li class="w-8 h-8 rounded-full  hover:border-secondary border border-white  flex justify-center items-center transition-all duration-700  ease-out">
             <a href="#"><img src="./icon/fb.svg" class="h-3 object-contain" alt="" /></a>
           </li>
-          <li class="w-8 h-8  rounded-full border border-white flex justify-center items-center">
+          <li class="w-8 h-8  rounded-full hover:border-secondary border border-white flex justify-center items-center transition-all duration-700  ease-out">
            <a href="#"><img src="./icon/youtube.png" class="h-3 object-contain" alt="" /></a>
           </li>
-          <li class="w-8 h-8 rounded-full border border-white flex justify-center items-center">
+          <li class="w-8 h-8 rounded-full hover:border-secondary border border-white flex justify-center items-center transition-all duration-700  ease-out">
             <a href="#"><img src="./icon/twitter.png" class="h-3 object-contain" alt="" /></a>
           </li>
         </ul>
@@ -618,31 +620,31 @@
       <div>
         <h4 class="mb-7 text-base">Schools</h4>
         <ul class="flex flex-col gap-2">
-          <li><a href="" class="text-xs">Beacon Elementary</a></li>
-          <li><a href="" class="text-xs">Tyrone Elementary</a></li>
-          <li><a href="" class="text-xs">HW Middle School</a></li>
-          <li><a href="" class="text-xs">HW High School</a></li>
-          <li><a href="" class="text-xs">Harper Academy</a></li>
+          <li><a href="" class="text-xs hover:text-grey">Beacon Elementary</a></li>
+          <li><a href="" class="text-xs hover:text-grey">Tyrone Elementary</a></li>
+          <li><a href="" class="text-xs hover:text-grey">HW Middle School</a></li>
+          <li><a href="" class="text-xs hover:text-grey">HW High School</a></li>
+          <li><a href="" class="text-xs hover:text-grey">Harper Academy</a></li>
         </ul>
       </div>
       <div>
         <h4 class="mb-7 text-base">District Info</h4>
         <ul class="flex flex-col gap-2">
-          <li><a href="" class="text-xs">Home</a></li>
-          <li><a href="" class="text-xs">Board of Education</a></li>
+          <li><a href="" class="text-xs hover:text-grey">Home</a></li>
+          <li><a href="" class="text-xs hover:text-grey">Board of Education</a></li>
         </ul>
       </div>
       <div>
         <h4 class="mb-7 text-base">More</h4>
         <ul class="flex flex-col gap-2">
-          <li><a href="" class="text-xs">Menu</a></li>
-          <li><a href="" class="text-xs">Illuminate Education</a></li>
-          <li><a href="" class="text-xs">MI Star Parents</a></li>
-          <li><a href="" class="text-xs">MI Star Students</a></li>
-          <li><a href="" class="text-xs">MI Star Teachers</a></li>
-          <li><a href="" class="text-xs">KB Compass</a></li>
-          <li><a href="" class="text-xs">Atlas Rubicon Parents </a></li>
-          <li><a href="" class="text-xs">Atlas Rubicon Teachers </a></li>
+          <li><a href="" class="text-xs hover:text-grey">Menu</a></li>
+          <li><a href="" class="text-xs hover:text-grey">Illuminate Education</a></li>
+          <li><a href="" class="text-xs hover:text-grey">MI Star Parents</a></li>
+          <li><a href="" class="text-xs hover:text-grey">MI Star Students</a></li>
+          <li><a href="" class="text-xs hover:text-grey">MI Star Teachers</a></li>
+          <li><a href="" class="text-xs hover:text-grey">KB Compass</a></li>
+          <li><a href="" class="text-xs hover:text-grey">Atlas Rubicon Parents </a></li>
+          <li><a href="" class="text-xs hover:text-grey">Atlas Rubicon Teachers </a></li>
         </ul>
       </div>
       <div>

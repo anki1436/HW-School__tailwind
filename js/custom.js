@@ -1,4 +1,7 @@
+
+  
 $(document).ready(function () {
+
     let options = {
       startAngle: -1.55,
       size: 100,
@@ -7,10 +10,8 @@ $(document).ready(function () {
         gradient: ['#841E25', '#841E25']
       }
     }
-    console.log("hoioo");
     $(".progressbar__circle .progressbar__bar").circleProgress(options).on('circle-animation-progress',
       function (event, progress, stepValue) {
-        console.log("no");
 
         $(this).parent().find(".progressbar__percentage").text(String(stepValue.toFixed(2).substr(2)) + "%");
       });
@@ -67,6 +68,8 @@ $(document).ready(function () {
                         });
 
 
+
+
 // const menuContainer =document.getElementById("menu");
 // const menuBtn =document.getElementById("menubar")  ;
 // menuBtn.onclick              
@@ -89,3 +92,15 @@ $('.lang-btn').click(function() {
 $('.lang-dropdown').toggleClass("lang-on")
 
 });
+
+
+
+
+
+
+const nav =document.getElementsByTagName("header");
+let bannerTop=nav[0].clientHeight+"px";
+
+// console.log(bannerTop)
+
+$("body").css("padding-top",bannerTop);
