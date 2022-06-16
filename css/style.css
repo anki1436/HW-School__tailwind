@@ -28,27 +28,25 @@ a{
   margin: 0 auto;
 }
 .banner {
-  height: calc(100vh - 133px);
-  max-height: 700px;
-  min-height: 550px;
-  padding-bottom: unset;
-    background-image: url("../img/pillar-structure-bg.webp");
+  min-height: 600px;
+  max-height:800px;
+
+  /* min-height: calc(100vh - 133px); */
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.78)
+    ),
+    url('../img/pillar-structure-bg.webp');
   background-size: cover;
-  position: relative;
-  z-index: 1;
 }
+
 .blog-bg{
   transform:rotate(90deg) translateX(-125px);
   right: 0;
+  
 }
-.banner-bg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.78);
-  z-index: -1;
-}
+
 .blog-img:after {
   content: "";
   position: absolute;
@@ -479,9 +477,7 @@ font-weight: 400;
   .mission .container {
     padding: 0 40px;
 }
-.banner{
-  padding-bottom: 42rem;
-}
+
 }
 @media only screen and (max-width:545px){
 
@@ -554,3 +550,4 @@ font-weight: 400;
   }
 
   }
+  

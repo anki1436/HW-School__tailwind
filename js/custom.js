@@ -94,11 +94,15 @@ $('.lang-dropdown').toggleClass("lang-on")
 });
 
 
+let newNmun= 25;
+var hey=(temp,main)=>  { 
+console.log(`"hey" + ${temp} + ${main}`);
+}
+hey("ankit",9);
 
 
 
-
-const nav =document.getElementsByTagName("header");
+const nav =document.getElementsByTagName("header");                                                                                                                                                   
 let bannerTop=nav[0].clientHeight+"px";
 
 // console.log(bannerTop)
