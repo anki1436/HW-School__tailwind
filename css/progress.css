@@ -78,7 +78,6 @@
 }
 @media (max-width: 767px) {
   .progressbar__card {
-    width: 100%;
     margin: 0 0 1.25rem 0;
   }
   .progressbar__card:last-child {
