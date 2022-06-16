@@ -52,6 +52,7 @@
 @media (max-width: 767px) {
   .progressbar__wrapper {
     flex-wrap: wrap;
+    gap: 20px;
   }
 }
 @media (max-width: 575px) {
@@ -116,9 +117,10 @@
 }
 .progressbar__percentage {
   font-size: 1.3125rem;
-  font-weight: 700;
+  font-weight: 400;
   transform: translate(-45%, -45%);
   transition: all 0.1s;
+
 }
 .progressbar .progressbar__card .progressbar__circle:hover .progressbar__box {
   position: absolute;
